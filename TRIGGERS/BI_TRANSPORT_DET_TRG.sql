@@ -1,0 +1,14 @@
+--------------------------------------------------------
+--  DDL for Trigger BI_TRANSPORT_DET_TRG
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TRIGGER "INSTITUTE"."BI_TRANSPORT_DET_TRG" 
+BEFORE INSERT ON TRANSPORT_DET 
+FOR EACH ROW 
+     WHEN (new.TRANSPORT_ID IS NULL) BEGIN 
+  :new.TRANSPORT_ID := TRANSPORT_DET_SEQ.NEXTVAL; 
+END; 
+ 
+
+/
+ALTER TRIGGER "INSTITUTE"."BI_TRANSPORT_DET_TRG" ENABLE;

@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table VEHICAL_MST
+--------------------------------------------------------
+
+  ALTER TABLE "INSTITUTE"."VEHICAL_MST" MODIFY ("VEHICAL_ID" NOT NULL ENABLE);
+  ALTER TABLE "INSTITUTE"."VEHICAL_MST" MODIFY ("INSTITUTE_ID" NOT NULL ENABLE);
+  ALTER TABLE "INSTITUTE"."VEHICAL_MST" ADD CONSTRAINT "VEHICAL_MAST_PK" PRIMARY KEY ("VEHICAL_ID")
+  USING INDEX "INSTITUTE"."VEHICAL_MAST_PK"  ENABLE;

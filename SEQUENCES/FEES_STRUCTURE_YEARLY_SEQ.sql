@@ -1,0 +1,5 @@
+--------------------------------------------------------
+--  DDL for Sequence FEES_STRUCTURE_YEARLY_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "INSTITUTE"."FEES_STRUCTURE_YEARLY_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 23 NOCACHE  NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;

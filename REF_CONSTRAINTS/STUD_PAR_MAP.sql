@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Ref Constraints for Table STUD_PAR_MAP
+--------------------------------------------------------
+
+  ALTER TABLE "INSTITUTE"."STUD_PAR_MAP" ADD CONSTRAINT "STUD_PAR_MAP_FK" FOREIGN KEY ("STUDENT_ID_FK")
+	  REFERENCES "INSTITUTE"."STUDENTS_DET" ("STUDENT_ID") ENABLE;
+  ALTER TABLE "INSTITUTE"."STUD_PAR_MAP" ADD CONSTRAINT "STUD_PAR_MAP_FK1" FOREIGN KEY ("PARENTS_ID_FK")
+	  REFERENCES "INSTITUTE"."PARENTS_DET" ("PARENTS_ID") ENABLE;

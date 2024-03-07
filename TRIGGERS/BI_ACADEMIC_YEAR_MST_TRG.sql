@@ -1,0 +1,13 @@
+--------------------------------------------------------
+--  DDL for Trigger BI_ACADEMIC_YEAR_MST_TRG
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TRIGGER "INSTITUTE"."BI_ACADEMIC_YEAR_MST_TRG" 
+BEFORE INSERT ON ACADEMIC_YEAR_MST  
+FOR EACH ROW 
+    WHEN (new.AC_YEAR_ID IS NULL) BEGIN 
+  :new.AC_YEAR_ID := ACADEMIC_YEAR_MST_SEQ.NEXTVAL; 
+END; 
+
+/
+ALTER TRIGGER "INSTITUTE"."BI_ACADEMIC_YEAR_MST_TRG" ENABLE;

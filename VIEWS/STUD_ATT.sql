@@ -1,0 +1,11 @@
+--------------------------------------------------------
+--  DDL for View STUD_ATT
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE EDITIONABLE VIEW "INSTITUTE"."STUD_ATT" ("ROLL_NO", "STUDENT_NAME", "ATTEND_STATUS") DEFAULT COLLATION "USING_NLS_COMP"  AS 
+  SELECT ST.ROLL_NO AS ROLL_NO,
+       ST.FIRSTNAME AS STUDENT_NAME,
+       ATT.ATTEND_STATUS AS ATTENDANCE
+FROM  STUDENTS_DET ST,AT_STUD_ATTENDANCE ATT
+
+;

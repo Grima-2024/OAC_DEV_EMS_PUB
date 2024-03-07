@@ -1,0 +1,5 @@
+--------------------------------------------------------
+--  DDL for Sequence HOSTEL_ROOM_ASSIGN_DET_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "INSTITUTE"."HOSTEL_ROOM_ASSIGN_DET_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 158 NOCACHE  NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;

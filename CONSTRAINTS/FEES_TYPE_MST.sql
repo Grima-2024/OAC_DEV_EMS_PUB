@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table FEES_TYPE_MST
+--------------------------------------------------------
+
+  ALTER TABLE "INSTITUTE"."FEES_TYPE_MST" MODIFY ("FEES_TYPE_ID" NOT NULL ENABLE);
+  ALTER TABLE "INSTITUTE"."FEES_TYPE_MST" MODIFY ("INSTITUTE_ID" NOT NULL ENABLE);
+  ALTER TABLE "INSTITUTE"."FEES_TYPE_MST" ADD CONSTRAINT "FEES_TYPE_MAST_PK" PRIMARY KEY ("FEES_TYPE_ID")
+  USING INDEX "INSTITUTE"."FEES_TYPE_MAST_PK"  ENABLE;

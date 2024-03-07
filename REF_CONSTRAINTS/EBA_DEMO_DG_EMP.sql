@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Ref Constraints for Table EBA_DEMO_DG_EMP
+--------------------------------------------------------
+
+  ALTER TABLE "INSTITUTE"."EBA_DEMO_DG_EMP" ADD CONSTRAINT "EBA_DEMO_DG_MGR_FK" FOREIGN KEY ("MGR")
+	  REFERENCES "INSTITUTE"."EBA_DEMO_DG_EMP" ("EMPNO") ENABLE;
+  ALTER TABLE "INSTITUTE"."EBA_DEMO_DG_EMP" ADD CONSTRAINT "EBA_DEMO_DG_DEPT_FK" FOREIGN KEY ("DEPTNO")
+	  REFERENCES "INSTITUTE"."EBA_DEMO_DG_DEPT" ("DEPTNO") ENABLE;

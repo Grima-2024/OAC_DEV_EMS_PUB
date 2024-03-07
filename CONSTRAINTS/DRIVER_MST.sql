@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table DRIVER_MST
+--------------------------------------------------------
+
+  ALTER TABLE "INSTITUTE"."DRIVER_MST" MODIFY ("DRIVER_ID" NOT NULL ENABLE);
+  ALTER TABLE "INSTITUTE"."DRIVER_MST" MODIFY ("INSTITUTE_ID" NOT NULL ENABLE);
+  ALTER TABLE "INSTITUTE"."DRIVER_MST" ADD CONSTRAINT "DRIVER_MST_CON" PRIMARY KEY ("DRIVER_ID")
+  USING INDEX "INSTITUTE"."DRIVER_MST_CON"  ENABLE;

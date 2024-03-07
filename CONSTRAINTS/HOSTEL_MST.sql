@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table HOSTEL_MST
+--------------------------------------------------------
+
+  ALTER TABLE "INSTITUTE"."HOSTEL_MST" MODIFY ("HOSTEL_ID" NOT NULL ENABLE);
+  ALTER TABLE "INSTITUTE"."HOSTEL_MST" MODIFY ("INSTITUTE_ID" NOT NULL ENABLE);
+  ALTER TABLE "INSTITUTE"."HOSTEL_MST" ADD CONSTRAINT "HOSTEL_MST_PK" PRIMARY KEY ("HOSTEL_ID")
+  USING INDEX "INSTITUTE"."HOSTEL_MST_PK"  ENABLE;

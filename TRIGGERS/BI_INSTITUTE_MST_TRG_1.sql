@@ -1,0 +1,13 @@
+--------------------------------------------------------
+--  DDL for Trigger BI_INSTITUTE_MST_TRG
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TRIGGER "INSTITUTE"."BI_INSTITUTE_MST_TRG" 
+BEFORE INSERT ON INSTITUTE_MST 
+FOR EACH ROW 
+   WHEN (new.INSTITUTE_ID IS NULL) BEGIN 
+  :new.INSTITUTE_ID := INSTITUTE_MST_seq.NEXTVAL; 
+END; 
+
+/
+ALTER TRIGGER "INSTITUTE"."BI_INSTITUTE_MST_TRG" ENABLE;
